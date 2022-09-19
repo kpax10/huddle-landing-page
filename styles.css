@@ -96,36 +96,35 @@ select {
 body {
   background: no-repeat url(./images/bg-mobile.svg);
   background-size: contain;
-  padding: 2.5rem 2.5rem 0 2.5rem;
   text-align: center;
 }
 
 .container {
+  padding: 2.5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 433px;
   margin: auto;
 }
 
 .logo {
   height: 30px;
-  margin-bottom: 3.5rem;
 }
 
-.mockup {
-  margin: auto;
+.mockup-img {
   margin-bottom: 3.75rem;
-  max-height: 209px;
 }
 
 h2 {
   line-height: 2.25rem;
-  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 .container p {
   line-height: 1.5rem;
   margin-bottom: 1.5rem;
-  max-width: 27rem;
 }
 
 button {
@@ -139,7 +138,6 @@ ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  margin-top: 4rem;
   gap: 0.5rem;
 }
 
@@ -157,12 +155,11 @@ ul img {
   body {
     background: no-repeat url(./images/bg-desktop.svg);
     background-size: cover;
-    display: flex;
-    padding: 2.5rem;
-    /* align-items: center; */
+    /* display: flex; */
+    /* padding: 2.5rem; */
   }
 
-  .container {
+  /* .container {
     display: flex;
     max-width: none;
     align-items: center;
@@ -174,7 +171,7 @@ ul img {
 
   .mockup {
     max-height: none;
-  }
+  } */
 }
 
 
