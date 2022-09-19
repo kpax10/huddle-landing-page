@@ -155,9 +155,11 @@ ul img {
 
 @media (min-width: 800px) {
   body {
-    background: url(./images/bg-desktop.svg);
+    background: no-repeat url(./images/bg-desktop.svg);
+    background-size: cover;
     display: flex;
-    align-items: center;
+    padding: 2.5rem;
+    /* align-items: center; */
   }
 
   .container {
