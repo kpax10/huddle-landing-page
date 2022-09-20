@@ -95,7 +95,7 @@ select {
 
 body {
   background: no-repeat url(./images/bg-mobile.svg);
-  background-size: contain;
+  background-size: cover;
   text-align: center;
 }
 
@@ -149,34 +149,66 @@ ul img {
 
 
 
-
-
 @media (min-width: 800px) {
   body {
     background: no-repeat url(./images/bg-desktop.svg);
     background-size: cover;
+    text-align: left;
     /* display: flex; */
     /* padding: 2.5rem; */
   }
 
-  /* .container {
-    display: flex;
-    max-width: none;
-    align-items: center;
-  }
-
   .logo {
-    height: 3.5rem;
+    height: 54px;
+    margin-bottom: 4rem;
   }
 
-  .mockup {
-    max-height: none;
-  } */
+  .container {
+    max-width: none;
+    padding: 3.5rem 5rem 2.5rem 5rem;
+
+  }
+
+  .mockup-img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .main-content {
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  .desktop-right h2 {
+    /* font-size: var(--fs-xl); */
+    padding-right: 3rem;
+    padding-top: 2rem;
+  }
+
+
+  ul {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  ul img {
+    height: 40px;
+  }
 }
 
 
+@media (min-width: 1160px) {
+  .desktop-right h2 {
+    font-size: var(--fs-xl);
+    line-height: 3.75rem;
+  }
 
-
+  .main-content button {
+    font-size: var(--fs-med);
+    padding: 13px 64px;
+    border-radius: 4rem;
+  }
+}
 
 
 /* Utilities */
