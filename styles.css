@@ -173,7 +173,7 @@ ul svg:hover {
   .container {
     max-width: none;
     padding: 3.5rem 5rem 2.5rem 5rem;
-
+    max-width: 1440px;
   }
 
   .mockup-img {
@@ -188,7 +188,6 @@ ul svg:hover {
 
   .desktop-right h2 {
     padding-top: 2rem;
-    padding-right: 3rem;
   }
 
   ul {
