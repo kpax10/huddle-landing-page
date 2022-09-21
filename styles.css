@@ -1,5 +1,6 @@
 :root {
   --clr-primary-800: hsl(257, 40%, 49%);
+  --clr-neutral-400: hsl(322, 100%, 66%);
   --clr-neutral-300: hsl(300, 69%, 71%);
   --clr-neutral-100: hsl(0, 0%, 100%);
 
@@ -134,6 +135,12 @@ button {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
 }
 
+button:hover {
+  transition: all 0.2s;
+  background-color: var(--clr-neutral-300);
+  color: var(--clr-neutral-100);
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -141,10 +148,20 @@ ul {
   gap: 0.5rem;
 }
 
-ul img {
+ul svg {
+  height: 28px;
+  fill: var(--clr-neutral-100);
+}
+
+ul svg:hover {
+  fill: var(--clr-neutral-400);
+}
+
+/* ul img {
   height: 28px;
   filter: invert(100%);
-}
+} */
+
 
 
 
@@ -191,7 +208,7 @@ ul img {
     justify-content: flex-end;
   }
 
-  ul img {
+  ul svg {
     height: 40px;
   }
 }
