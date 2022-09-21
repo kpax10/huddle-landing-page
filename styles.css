@@ -155,24 +155,14 @@ ul svg {
 
 ul svg:hover {
   fill: var(--clr-neutral-400);
+  transition: all 0.2s;
 }
-
-/* ul img {
-  height: 28px;
-  filter: invert(100%);
-} */
-
-
-
-
 
 @media (min-width: 800px) {
   body {
     background: no-repeat url(./images/bg-desktop.svg);
     background-size: cover;
     text-align: left;
-    /* display: flex; */
-    /* padding: 2.5rem; */
   }
 
   .logo {
@@ -197,11 +187,9 @@ ul svg:hover {
   }
 
   .desktop-right h2 {
-    /* font-size: var(--fs-xl); */
-    padding-right: 3rem;
     padding-top: 2rem;
+    padding-right: 3rem;
   }
-
 
   ul {
     margin: 0;
@@ -213,7 +201,6 @@ ul svg:hover {
   }
 }
 
-
 @media (min-width: 1160px) {
   .desktop-right h2 {
     font-size: var(--fs-xl);
@@ -222,7 +209,7 @@ ul svg:hover {
 
   .main-content button {
     font-size: var(--fs-med);
-    padding: 13px 64px;
+    padding: 0.8125rem 4rem;
     border-radius: 4rem;
   }
 }
