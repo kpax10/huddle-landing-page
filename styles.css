@@ -118,7 +118,7 @@ body {
   margin-bottom: 3.75rem;
 }
 
-h2 {
+h1 {
   line-height: 2.25rem;
   margin-bottom: 1rem;
 }
@@ -186,7 +186,7 @@ ul svg:hover {
     gap: 2.5rem;
   }
 
-  .desktop-right h2 {
+  .desktop-right h1 {
     padding-top: 2rem;
   }
 
@@ -201,7 +201,7 @@ ul svg:hover {
 }
 
 @media (min-width: 1160px) {
-  .desktop-right h2 {
+  .desktop-right h1 {
     font-size: var(--fs-xl);
     line-height: 3.75rem;
   }
