@@ -135,12 +135,6 @@ button {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
 }
 
-button:hover {
-  transition: all 0.2s;
-  background-color: var(--clr-neutral-300);
-  color: var(--clr-neutral-100);
-}
-
 ul {
   display: flex;
   justify-content: center;
@@ -153,9 +147,18 @@ ul svg {
   fill: var(--clr-neutral-100);
 }
 
-ul svg:hover {
-  fill: var(--clr-neutral-400);
-  transition: all 0.2s;
+/* Hover states for non-mobile */
+@media (hover: hover) {
+  button:hover {
+    transition: all 0.2s;
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-neutral-100);
+  }
+
+  ul svg:hover {
+    fill: var(--clr-neutral-400);
+    transition: all 0.2s;
+  }
 }
 
 @media (min-width: 800px) {
